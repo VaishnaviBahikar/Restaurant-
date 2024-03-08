@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Restaurant App</h1>
+  <h2>Choose Price:</h2>
+  <select id="price">
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+  </select>
+  <h2>Choose Dish:</h2>
+  <input type="text" id="dish">
+  <h2>Choose Table:</h2>
+  <select id="table">
+    <option value="1">Table 1</option>
+    <option value="2">Table 2</option>
+    <option value="3">Table 3</option>
+  </select>
+  <button onclick="addToBill()">Add to Bill</button>
+  <table id="orders">
+    <thead>
+      <tr>
+        <th>Dish</th>
+        <th>Price</th>
+        <th>Table</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="orders-list">
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" id="total">Total: 0</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
